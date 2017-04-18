@@ -7,32 +7,47 @@
     import register from '../components/register/registerComponent.vue';
     //zm
     import find from '../components/find/findComponent.vue';
+   //tw
+    import TwComponent from '../components/classify/TwComponent.vue';
+    import TwListComponent from '../components/classify/TwListComponent.vue';
+    import ClassifyComponent from '../components/classify/ClassifyComponent.vue';
     Vue.use(VueRouter)
     var router = new VueRouter({
       routes: [{
         path: '/',
         component:App,
-        children: [{
-            // 分页 会被渲染 <router-view> 中
-            path: '/myself',
+        children:[{
+        	//yw
+        	path: '/myself',
             component:myself,
             children:[{
-            	path:'/register',
-            	component:register
-            },        
-            {
-		        path: '/login',
-		        component:login
-             }]
-            },
-            //ZM
-            {
+	            	path:'/register',
+	            	component:register
+	            },        
+	            {
+			        path: '/login',
+			        component:login
+	            }]
+	        },
+	        //zm
+	        {
 	        	path: '/find',
 	        	component:find
-            }
-        ]
-            
-	  }]
+	        },
+	        //tw
+	        {
+	        	path:'/classify',
+                component:TwComponent,
+                children:[{
+                    path:'/classify/',
+                    component:TwListComponent
+                },{
+                    path:'/classify/goods/:goodsname',
+                    component:ClassifyComponent
+                }]
+	        }]
+      }]
     })
 
 export default router
+

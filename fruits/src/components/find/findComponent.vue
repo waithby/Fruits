@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<header class="mui-bar mui-bar-nav">
-		<a id="back" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-		<h1 id="title" class="mui-title" @click="test" >下拉刷新和上拉加载更多</h1>
+			<a id="back" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="title" class="mui-title" @click="test" >下拉刷新和上拉加载更多</h1>
 		</header>
 		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
 			<div class="mui-scroll">
@@ -18,7 +18,6 @@
 <script type="text/javascript">
 	import {mapActions} from "vuex";
 	
-//	require('../../../js/find.js') 
 	export default {
 		name: 'find',
 		data: function(){
@@ -32,7 +31,6 @@
 			test:function(){
 				try {
 					console.log(this)
-//					var mes = 
                      this.$store.findStore.dispatch("hzm", this.name)
                  }catch(error) {
                      alert(error)
