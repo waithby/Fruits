@@ -1,9 +1,12 @@
     import Vue from 'vue';
     import VueRouter from 'vue-router';  
-    import App from '../App.vue'
+    import App from '../App.vue';
     import myself from '../components/myself/myselfComponent.vue';
     import login from '../components/login/loginComponent.vue';
     import register from '../components/register/registerComponent.vue';
+    import TwComponent from '../components/classify/TwComponent.vue';
+    import TwListComponent from '../components/classify/TwListComponent.vue';
+    import ClassifyComponent from '../components/classify/ClassifyComponent.vue';
     Vue.use(VueRouter)
     var router = new VueRouter({
       routes: [{
@@ -20,7 +23,18 @@
             {
 		        path: '/login',
 		        component:login
-             }]
+            }]
+            },
+            {
+                path:'/classify',
+                component:TwComponent,
+                children:[{
+                    path:'/classify/',
+                    component:TwListComponent,
+                },{
+                    path:'/classify/goods/:goodsname',
+                    component:ClassifyComponent,
+                }]
               }]
             
 //        {
@@ -52,3 +66,4 @@
     })
 
 export default router
+ 
