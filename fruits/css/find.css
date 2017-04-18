@@ -1,0 +1,12 @@
+.mui-bar{top: 0;background: linear-gradient(to right, #11b57c , #0eb27b);-webkit-box-shadow: 0 1px 6px #ccc;box-shadow: 0 1px 6px #ccc;}
+.mui-bar-nav .mui-title{color: white;}
+.mui-icon-back:before, .mui-icon-left-nav:before {color: white;}
+.mui-table-view-chevron .mui-table-view-cell{
+	padding-right: 15px;
+}
+.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn){margin-right: -15px; }
+.mui-table-view-cell img{display: block; width: 100%;}
+.mui-navigate-right:after, .mui-push-right:after {
+    right: 15px;
+    content: '';
+}

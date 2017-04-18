@@ -2,7 +2,7 @@ button, .mui-btn {
 		margin-left: 10px;
 }
 #top{padding-top:40px;}
-.mui-icon{line-height:38px;}
+/*.mui-icon{line-height:38px;}*/
 #alertBtn{float:left;width: 100px;height:30px;padding:0;background:#008842;color:white;}
 #input input{width:200px;float:left;}
 #box .mui-input-row{height:61px;padding:15px;}

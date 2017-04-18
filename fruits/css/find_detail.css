@@ -1,0 +1,42 @@
+.mui-bar-nav {top: 0;background: linear-gradient(to right, #11b57c , #0eb27b);-webkit-box-shadow: 0 1px 6px #ccc;box-shadow: 0 1px 6px #ccc;}
+.mui-bar-nav .mui-title{color: white;}
+.mui-icon-back:before, .mui-icon-left-nav:before {color: white;}
+.title {margin: 20px 15px 5px;color: #6d6d72;font-size: 15px;}
+.mui-card{background: none;border: none;margin-left: 10px;margin-right: 10px;}
+.mui-bar-nav~.mui-content{padding-top: 0;}
+.mui-table-view .mui-media-object.mui-pull-right {
+    float: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.mui-table-view .mui-media-object {
+    line-height: 42px;
+    max-width: 145px;
+    height: 125px;
+}
+.mui-ios .mui-table-view-cell{
+	float: left;
+    height: 185px; 
+    max-width: 49%;
+}
+.mui-table-view .mui-media-object.mui-pull-right{
+	width: 100%;
+}
+.mui-table-view .mui-media, .mui-table-view .mui-media-body{
+	background-color:white ;
+	border-radius: 5px;
+	float: left;
+	width: 100%;
+	margin-top: 5px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.mui-card .mui-table-view li:nth-child(2n-1){
+	margin-right: 2%;
+}
+.zm_price{float: left;font-size: 12px;font-weight: bold;color: red;}
+.zm_oldprice{float: right;color: #ccc;font-size: 12px;}
+.mui-table-view-cell:after{background-color: white; }
+
+.title_img{margin: 50px 10px 0 10px;}
+.title_img img{display: block;width: 100%;}

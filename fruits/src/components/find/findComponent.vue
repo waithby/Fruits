@@ -2,21 +2,23 @@
 	<div>
 		<header class="mui-bar mui-bar-nav">
 		<a id="back" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-		<h1 id="title" class="mui-title">下拉刷新和上拉加载更多</h1>
+		<h1 id="title" class="mui-title" @click="test" >下拉刷新和上拉加载更多</h1>
 		</header>
-		<div class="mui-content"></div><div id="pullrefresh" class="mui-content mui-scroll-wrapper">
-			
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<ul class="mui-table-view mui-table-view-chevron">
+					
+				</ul>
+			</div>
 		</div>
 	</div>
 	
 </template>
 
 <script type="text/javascript">
-//	import '../../../css/app.css';
-//	import '../../../css/feedback-page.css';
-//	import '../../../css/find_detail.css';
-//	import '../../../css/find.css';
+	import {mapActions} from "vuex";
 	
+//	require('../../../js/find.js') 
 	export default {
 		name: 'find',
 		data: function(){
@@ -24,6 +26,25 @@
 				name: 'hzm',
 				pwd: 123456
 			}
+		},
+		methods: {
+			...mapActions(["test"]),
+			test:function(){
+				try {
+					console.log(this)
+//					var mes = 
+                     this.$store.findStore.dispatch("hzm", this.name)
+                 }catch(error) {
+                     alert(error)
+                 }
+			}
 		}
 	}
 </script>
+
+<style lang="css">
+@import url("../../../css/find.css");
+@import url("../../../css/find_app.css");
+@import url("../../../css/feedback-page.css");
+/*@import url("../../../css/find_detail.css");*/
+</style>

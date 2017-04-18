@@ -1,4 +1,6 @@
 <?php
+	//解决跨域问题
+//	header("Access-Control-Allow-Origin: http://localhost:8080");
     include "../../Global/Global.php";
     $sql = new sql();
     class Goods{
