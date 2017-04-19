@@ -8,9 +8,11 @@
     //zm
     import find from '../components/find/findComponent.vue';
    //tw
-    import TwComponent from '../components/classify/TwComponent.vue';
-    import TwListComponent from '../components/classify/TwListComponent.vue';
-    import ClassifyComponent from '../components/classify/ClassifyComponent.vue';
+//  import TwComponent from '../components/classify/TwComponent.vue';
+//  import TwListComponent from '../components/classify/TwListComponent.vue';
+//  import ClassifyComponent from '../components/classify/ClassifyComponent.vue';
+	//demo
+	import demo from '../components/componentDemo/comDemo.vue';
     Vue.use(VueRouter)
     var router = new VueRouter({
       routes: [{
@@ -34,18 +36,24 @@
 	        	path: '/find',
 	        	component:find
 	        },
-	        //tw
+	        //demo
 	        {
-	        	path:'/classify',
-                component:TwComponent,
-                children:[{
-                    path:'/classify/',
-                    component:TwListComponent
-                },{
-                    path:'/classify/goods/:goodsname',
-                    component:ClassifyComponent
-                }]
-	        }]
+	        	path: '/demo',
+	        	component:demo
+	        }
+	        //tw
+//	        {
+//	        	path:'/classify',
+//              component:TwComponent,
+//              children:[{
+//                  path:'/classify/',
+//                  component:TwListComponent
+//              },{
+//                  path:'/classify/goods/:goodsname',
+//                  component:ClassifyComponent
+//              }]
+//	        }
+	        ]
       }]
     })
 
