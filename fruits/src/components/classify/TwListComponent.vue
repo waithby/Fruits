@@ -1,6 +1,6 @@
 <template>
 <div class="del" >
-    <div class="dt"><img src="../../../images/bg1.jpg" alt="" /></div>
+    <div class="dt"><img src="../../../images/zm0012.jpeg" alt="" /></div>
     <ul>
         <li>
             <img src="../../../images/like3.jpeg" alt="" />

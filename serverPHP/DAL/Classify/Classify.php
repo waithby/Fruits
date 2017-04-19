@@ -23,6 +23,7 @@
             $goods->goodsId = $row["goods_id"];
             $goods->goodsId = $row["goods_name"];
             $goods->goodsImg = $row["goods_img_src"];
+            $goods->goodsMes = $row["goods_message"];
             $goods->goodsType = $row["goods_type"];
             $goods->goodsRemarks = $row["goods_remarks"];
 

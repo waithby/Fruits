@@ -22,7 +22,7 @@
                             </router-link>
                         </li>
                         <li class ="li3">
-                            <router-link to="/classify/goods/food">
+                            <router-link to="/classify/goods/fruit">
                                 <img src="../../../images/qie1.png" alt="" /><span>新鲜水果</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
