@@ -29,13 +29,13 @@
 			</div>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide" v-for="(item,index) in list1.zzbcounta6"><img :src="list1.zzbcounta6[0].goodsImg" /></div>
-					<!--<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner2.jpg" /></div>
+					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner1.jpg" /></div>
+					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner2.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner3.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner4.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner5.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner6.jpg" /></div>
-					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner7.jpg" /></div>-->
+					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner7.jpg" /></div>
 				</div>
 				<!-- Add Pagination -->
 				<div class="swiper-pagination"></div>
