@@ -7,6 +7,7 @@
     import register from '../components/register/registerComponent.vue';
     //zm
     import find from '../components/find/findComponent.vue';
+    import findDetail from '../components/findDetail/findDetailComponent.vue';
    //tw
 //  import TwComponent from '../components/classify/TwComponent.vue';
 //  import TwListComponent from '../components/classify/TwListComponent.vue';
@@ -35,24 +36,21 @@
 	        {
 	        	path: '/find',
 	        	component:find
+//	        	children:[{
+//	            	path:'/findDetail',
+//	            	component:findDetail
+//	            }]
+	        },
+	        {
+	        	path: '/findDetail/:id',
+	        	component:findDetail
 	        },
 	        //demo
 	        {
 	        	path: '/demo',
 	        	component:demo
 	        }
-	        //tw
-//	        {
-//	        	path:'/classify',
-//              component:TwComponent,
-//              children:[{
-//                  path:'/classify/',
-//                  component:TwListComponent
-//              },{
-//                  path:'/classify/goods/:goodsname',
-//                  component:ClassifyComponent
-//              }]
-//	        }
+	        
 	        ]
       }]
     })

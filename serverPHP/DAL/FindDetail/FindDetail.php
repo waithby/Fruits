@@ -2,17 +2,19 @@
 	//解决跨域问题
 //	header("Access-Control-Allow-Origin: http://localhost:8080");
     include "../../Global/Global.php";
+//      	echo $_GET["gid"];
     $sql = new sql();
     class Goods{
         public $goodsId;
         public $goodsName;
         public $goodsImg;
         public $goodsType;
-        public $goodsRemarks;
+        public $goodsNewPrice;
+        public $goodsOldPrice;
     }
     $con = new mysqli($sql->host,$sql->user,$sql->password,$sql->table);
     $con->query("set names utf8"); //设置编码为utf8 显示中文
-    $sql = 'select * from goods';
+    $sql = 'select * from fruit_info';
     $res = $con->query($sql);
     // echo $res;
     $arr = array();
@@ -20,11 +22,12 @@
 
         while($row = $res->fetch_assoc()){
             $goods = new Goods();
-            $goods->goodsId = $row["goods_id"];
-            $goods->goodsName = $row["goods_name"];
-            $goods->goodsImg = $row["goods_img_src"];
-            $goods->goodsType = $row["goods_type"];
-            $goods->goodsRemarks = $row["goods_remarks"];
+            $goods->goodsId = $row["fruit_ids"];
+            $goods->goodsName = $row["fruit_title"];
+            $goods->goodsImg = $row["fruit_imgs"];
+            $goods->goodsType = $row["goods_id"];
+            $goods->goodsNewPrice = $row["fruit_newprice"];
+            $goods->goodsOldPrice = $row["fruit_oldprice"];
 
             array_push($arr, $goods);
         }
@@ -45,7 +48,6 @@
     }else{
         $str = json_encode($arr);
         // echo json_encode($arr);
-         // print_r( $str );
          print_r( $str);
 
     }
