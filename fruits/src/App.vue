@@ -29,13 +29,13 @@
 			</div>
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner2.jpg" /></div>
-					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner2.jpg" /></div>
+					<div class="swiper-slide" v-for="(item,index) in list1.zzbcounta6"><img :src="list1.zzbcounta6[0].goodsImg" /></div>
+					<!--<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner2.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner3.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner4.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner5.jpg" /></div>
 					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner6.jpg" /></div>
-					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner7.jpg" /></div>
+					<div class="swiper-slide"><img src="http://localhost:8080/src/components/main/img/banner7.jpg" /></div>-->
 				</div>
 				<!-- Add Pagination -->
 				<div class="swiper-pagination"></div>
@@ -150,12 +150,12 @@
 
 			<div class="content clear">
 				<div class="content1 floor1">
-					<img src="http://localhost:8080/src/components/main/img/banner14.jpg" />
+					<img src="http://localhost:8080/src/components/main/img/banner6.jpg" />
 					<div class="index_sale">
 						<div class="index_sale_z1">4月营养早餐</div>
 					</div>
 					<ul class="list">
-						<li v-for="(item,index) in list1.zzbcounta"><img :src="item.goodsImg" /></li>
+						<li v-for="(item,index) in list1.zzbcounta1"><img :src="item.goodsImg" /></li>
 					</ul>
 				</div>
 				<!--floor1-->
@@ -166,15 +166,7 @@
 						<div class="index_sale_z2">特惠专享</div>
 					</div>
 					<ul class="list">
-						<li><img src="http://localhost:8080/src/components/main/img/list4_1.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_2.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_3.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_4.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_5.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_6.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_7.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_8.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list4_9.jpg" /></li>
+						<li v-for="(item,index) in list1.zzbcounta2"><img :src="item.goodsImg" /></li>
 					</ul>
 				</div>
 				<!--floor2-->
@@ -186,18 +178,7 @@
 						<!--<div class="index_sale_z2">特惠专享</div>-->
 					</div>
 					<ul class="list">
-						<li><img src="http://localhost:8080/src/components/main/img/list5_1.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_2.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_3.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_4.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_5.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_6.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_7.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_8.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_9.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_10.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_11.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list5_12.jpg" /></li>
+						<li v-for="(item,index) in list1.zzbcounta3"><img :src="item.goodsImg" /></li>
 					</ul>
 				</div>
 				<!--floor3-->
@@ -209,39 +190,13 @@
 						<!--<div class="index_sale_z2">特惠专享</div>-->
 					</div>
 					<ul class="list">
-						<li><img src="http://localhost:8080/src/components/main/img/list3_1.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_2.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_3.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_4.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_5.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_6.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_7.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_8.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list3_9.jpg" /></li>
+						<li v-for="(item,index) in list1.zzbcounta4"><img :src="item.goodsImg" /></li>
 					</ul>
 				</div>
 				<!--floor4-->
 				<div class="content1 floor5">
 					<ul class="floor5_list ">
-						<li><img src="http://localhost:8080/src/components/main/img/list7_1.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_2.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_3.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_4.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_5.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_6.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_7.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_8.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_9.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_11.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_12.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_13.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_14.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_15.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_16.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_17.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_18.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_19.jpg" /></li>
-						<li><img src="http://localhost:8080/src/components/main/img/list7_20.jpg" /></li>
+						<li v-for="(item,index) in list1.zzbcounta5"><img :src="item.goodsImg" /></li>
 					</ul>
 				</div>
 				<!--floor4-->
@@ -288,11 +243,7 @@
 		data: function() {
 			return {
 				dfg: 'dfg',
-				list1:[],
-				list2:[],
-				list3:[],
-				list4:[],
-				list5:[],
+				list1:[]
 			}
 		},
 		computed: mapGetters(['counta','zzbcounta']),
@@ -314,18 +265,19 @@
 			},
 		},
 		beforeMount:function(){ 
-			this.$store.dispatch('ajax1','6_');
-//			this.$store.dispatch('ajax2','4_');
-//			this.$store.dispatch('ajax3','5_');
-//			this.$store.dispatch('ajax4','3_');
-//			this.$store.dispatch('ajax5','7_');
+			this.$store.dispatch('ajax1','list6_%');
+			this.$store.dispatch('ajax2','list4_%');
+			this.$store.dispatch('ajax3','list5_%');
+			this.$store.dispatch('ajax4','list3_%');
+			this.$store.dispatch('ajax5','list7_%');
+			this.$store.dispatch('ajax6','banner%');
 //			list = this.zzbcounta;
 			
 			this.list1 = this.$store.getters;
 			console.log(this.list1);
 		},
 		beforeUpdate:function(){
-			console.log(this.$store.getters.zzbcounta)
+			console.log(this.$store.getters)
 		}
 	}
 </script>

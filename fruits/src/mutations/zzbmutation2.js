@@ -5,11 +5,11 @@ export default function(state, value) {
 	var arr = [];
 	$.ajax({
 		type: "GET",
-		url: "http://localhost/vuejs/fruit2/serverPHP/DAL/main/main.php?val=" + value,
+		url: "http://localhost/vuejs/fruit2/serverPHP/DAL/main/main4.php?val=" + value,
 		dataType: "jsonp",
 		async: 'false',
 		success: function(res) {
-			state.data1 = JSON.parse(res);
+			state.data2 = JSON.parse(res);
 			//			console.log(state.data1);
 			return state
 		}

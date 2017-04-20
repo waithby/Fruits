@@ -8,5 +8,20 @@ export default {
     },
     data1:function(state){
     	return state.data1
+    },
+    data2:function(state){
+    	return state.data2
+    },
+    data3:function(state){
+    	return state.data3
+    },
+    data4:function(state){
+    	return state.data4
+    },
+    data5:function(state){
+    	return state.data5
+    },
+    data6:function(state){
+    	return state.data6
     }
 }
