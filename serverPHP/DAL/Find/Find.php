@@ -12,7 +12,7 @@
     }
     $con = new mysqli($sql->host,$sql->user,$sql->password,$sql->table);
     $con->query("set names utf8"); //设置编码为utf8 显示中文
-    $sql = 'select * from goods';
+    $sql = 'select * from goods where goods_remarks="zm"';
     $res = $con->query($sql);
     // echo $res;
     $arr = array();

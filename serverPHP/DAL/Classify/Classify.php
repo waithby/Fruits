@@ -9,9 +9,17 @@
         public $goodsImg;
         public $goodsType;
         public $goodsRemarks;
+        public $goodsPrice;
+        public $goodsOldPrice;
+        public $goodsDis;
+        public $goodsDisImg;
+        public $goodsOldImg;
+        public $goodsNewImg;
+        public $goodsMes;
     }
     $con = new mysqli($sql->host,$sql->user,$sql->password,$sql->table);
-    $con->query("set Goods utf8"); //设置编码为utf8 显示中文
+    // mysqli_query($con,"set names utf8");
+    $con->query("set names utf8"); //设置编码为utf8 显示中文
     $sql = 'select * from goods';
     $res = $con->query($sql);
     // echo $res;
@@ -21,10 +29,17 @@
         while($row = $res->fetch_assoc()){
             $goods = new Goods();
             $goods->goodsId = $row["goods_id"];
-            $goods->goodsId = $row["goods_name"];
-            $goods->goodsImg = $row["goods_img_src"];
+            $goods->goodsPrice = $row["goods_price"];
+            $goods->goodsOldPrice = $row["goods_old_price"];
+            $goods->goodsName = $row["goods_name"];
+            $goods->goodsDis = $row["goods_discount"];
+            $goods->goodsMes = $row["goods_message"];
             $goods->goodsType = $row["goods_type"];
             $goods->goodsRemarks = $row["goods_remarks"];
+            $goods->goodsImg = $row["goods_img_src"];
+            $goods->goodsDisImg = $row["goods_dis_img"];
+            $goods->goodsOldImg = $row["goods_old_img"];
+            $goods->goodsNewImg = $row["goods_new_img"];
 
             array_push($arr, $goods);
         }

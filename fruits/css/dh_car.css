@@ -1,0 +1,153 @@
+body, html {
+    height: 100%;
+}
+.pt120 {
+    padding-bottom: 120px;
+}
+.wrap {
+    padding: 0 0 70px 0;
+}
+.cart_list_li {
+    padding: 2px 0 2px 5px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+
+.product-item {
+    position: relative;
+    margin-bottom: 3px;
+}
+.product-item a img{
+    display:inline-block;
+    width:85px;
+    height:85px;
+}
+
+.product_info {
+    margin: 0 35px 0 95px;
+}
+.product_thumb {
+    float: left;
+    margin-right: 10px;
+}
+.product_name {
+    font-size: 14px;
+    line-height: 18px;
+    height: 37px;
+    overflow: hidden;
+}
+.product_price {
+    margin-bottom: 2px;
+}
+
+.quantity .decrement {
+    border-radius: 3px 0 0 3px;
+    color:#222222;
+}
+.quantity .increment {
+    border-radius: 0 3px 3px 0;
+    color:#222222;
+}
+.quantity input{
+    font-size: 12px;
+    width:30px;
+    height:30px;
+}
+.decrement, .increment, .itxt {
+    float: left;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    margin-left: -1px;
+    background: #fff;
+    border: 1px solid #9e9e9e;
+    border-radius: 0;
+}
+.wrap .quantity {
+    height: 30px;
+    position:relative;
+    left:5px;
+    top:5px;
+    margin-bottom:10px;
+}
+
+.del-btn {
+    right: 5px;
+    bottom: 18px;
+    position:absolute;
+}
+
+.del-btn a {
+    display: block;
+    width: 25px;
+    height: 38px;
+    text-indent: -999px;
+    background-image: url(http://img07.yiguoimg.com/e/web/151028/00981/143130/icon_delete.png);
+    background-size: 100% 100%;
+}
+clear_cart {
+    margin-top: 20px;
+}
+
+.clear_cart a {
+    display: block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #008842;
+    background: #fff;
+}
+.payment_total {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    padding: 5px 20px;
+    line-height: 20px;
+    overflow: hidden;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    bottom: 50px;
+}
+
+.footer {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #d5d5d5;
+    background: #fff;
+}
+.shp_cart_info span {
+    display: block;
+}
+.shp_cart_info strong {
+    color: #fb3d3d;
+    font-weight: normal;
+    margin-left: 2px;
+}
+.btn_right {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    display: block;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #fb3d3d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+    border-radius: 5px;
+    text-decoration: none;
+}

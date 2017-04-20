@@ -1,13 +1,17 @@
 <?php
-	function Login(user, pwd){
-	    $sql = "select * from users where email = '$email' and password = '$pwd';";
-	    $array = query($sql);
+		header("Access-Control-Allow-Origin: http://localhost:8080");
+//		header("Access-Control-Allow-Origin: *");
+//      include "../../Global/Global.php";
+        include "../../Global/DBHelper.php";
+        $phone = $_GET["phone"];
+        $psw = $_GET["psw"];
+	    $sql = "select * from userName where phone ='".$phone."'and psw='".$psw."'";   
+	    $array = query($sql);    
 	    if(count($array) > 0){
 	        session_start();
-	        $_SESSION["email"] = $email;//session_id	    	
-	        return '{"state": true}';
-	    } else{
-	        return '{"state": false, "message": "login fail!"}';       
+	        $_SESSION["phone"] = $phone;//session_id	    	
+	        echo '{"state":true,"message":"成功","phone":'.$phone.'}';
+	    }else{
+	        echo '{"state":false,"message":"失败"}';
 	    }
-	}
-?>
+//?>

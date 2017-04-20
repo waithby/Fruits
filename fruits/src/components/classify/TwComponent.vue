@@ -11,82 +11,110 @@
             <div >
                 <div >
                     <ul  class = "list clear">
-                        <li class ="li1 active">
+                        <li class ="li1 active" @click="get">
                             <router-link to="/classify/">
                                 <img src="../../../images/qie11.png" alt="" /><span>推荐分类</span>&nbsp;<strong></strong>
                             </router-link>
                         </li>
-                        <li class ="li2">
+                        <li class ="li2" @click="get">
                             <router-link to="/classify/goods/veb">
                                 <img src="../../../images/qie2.png" alt="" /><span>蔬菜豆菇</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li3">
-                            <router-link to="/classify/goods/food">
+                        <li class ="li3" @click="get">
+                            <router-link to="/classify/goods/fruit">
                                 <img src="../../../images/qie1.png" alt="" /><span>新鲜水果</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li4">
+                        <li class ="li4" @click="get">
                             <router-link to="/classify/goods/egg">
                                 <img src="../../../images/qie8.png" alt="" /><span>鲜肉蛋禽</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li5">
+                        <li class ="li5" @click="get">
                             <router-link to="/classify/goods/seafood">
                                 <img src="../../../images/qie3.png" alt="" /><span>水产海鲜</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li6">
+                        <li class ="li6" @click="get">
                             <router-link to="/classify/goods/cool">
                                 <img src="../../../images/qie4.png" alt="" /><span>速食冻品</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li7">
-                            <router-link to="/classify/goods/milk">
+                        <li class ="li7" @click="get">
+                            <router-link to="/classify/goods/veb">
                                 <img src="../../../images/qie10.png" alt="" /><span>牛奶面点</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>  
                             </router-link>
                         </li>
-                        <li class ="li8">
-                            <router-link to="/classify/goods/oil">
+                        <li class ="li8" @click="get">
+                            <router-link to="/classify/goods/fruit">
                                 <img src="../../../images/qie12.png" alt="" /><span>粮油副食</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li9">
-                            <router-link to="/classify/goods/wine">
+                        <li class ="li9" @click="get">
+                            <router-link to="/classify/goods/egg">
                                 <img src="../../../images/qie9.png" alt="" /><span>食品酒水</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li10">
-                            <router-link to="/classify/goods/import">
+                        <li class ="li10" @click="get">
+                            <router-link to="/classify/goods/seafood">
                                 <img src="../../../images/qie5.png" alt="" /><span>进口食品</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li11">
-                            <router-link to="/classify/goods/cook">    
+                        <li class ="li11" @click="get">
+                            <router-link to="/classify/goods/cool">    
                                 <img src="../../../images/qie11.png" alt="" /><span>厨房用品</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
-                        <li class ="li12">
-                            <router-link to="/classify/goods/daily">
+                        <li class ="li12" @click="get">
+                            <router-link to="/classify/goods/veb">
                                 <img src="../../../images/qie12.png" alt="" /><span>生活用品</span>&nbsp;<strong><img src="../../../images/tool_back.png" alt=""></strong>
                             </router-link>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
         </div>
+        
         <router-view></router-view>
     </div>
     </template>
    
     <script type="text/javascript">
-
+        import {mapActions,mapGetters} from "vuex";
         import Vue from 'vue';
         import VueRouter from 'vue-router'; 
         
         export default {
-            name: 'TwComponent'
-      
+            name: 'TwComponent',
+            data:function(){
+                return{
+                    name:'tw',
+                    pwd:111,
+                }
+            },
+            computed: mapGetters(['Adata','ttt']),
+            methods:{
+                show:function(){
+                     console.log(this.state)
+                 },
+                ...mapActions(["get"]),
+                get:function(){
+                    try {
+                        var data={
+                            name:this.name,
+                            pwd:this.pwd
+                         }
+                        
+                        console.log(this.twdata)
+                         this.$store.dispatch("tw",data )
+                     }catch(error) {
+                         alert(error)
+                     }
+                }
+            }
+
         }
     </script>
     <style lang="css">

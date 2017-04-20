@@ -1,19 +1,36 @@
-button, .mui-btn {
+#listen button, .mui-btn {
 		margin-left: 10px;
 }
-#top{padding-top:40px;}
-/*.mui-icon{line-height:38px;}*/
-#alertBtn{float:left;width: 100px;height:30px;padding:0;background:#008842;color:white;}
-#input input{width:200px;float:left;}
-#box .mui-input-row{height:61px;padding:15px;}
-#box .mui-input-row .mui-input-clear{height:30px;}
-#get{background:#008842;}
-#yanzhengma{
+#listen #top{padding-top:40px;}
+#listen #alertBtn{float:right;width: 100px;height:30px;padding:0;background:#008842;color:white;top:-28px;}
+#listen #input input{width:200px;float:left;}
+#listen .mui-content-padded span{line-height:38px;}
+#listen #box .mui-input-row{height:61px;padding:15px;} 
+#listen #box .mui-input-row .mui-input-clear{height:30px;}
+#listen #get{background:#008842;}
+#listen #yanzhengma{
 	   position:absolute;top:10px;right:10px;height:40px;
 }
-#button button{width: 135px;height:40px;}
-#two .mui-content-padded button{float: left;width:43%;margin-right:3%;height:40px;line-height:40px;padding:0;border:1px solid #008842;
+#listen #button button{width: 135px;height:40px;}
+#listen #two .mui-content-padded button,#two .mui-content-padded #register,#two .mui-content-padded #gogogo,#two .mui-content-padded #back{float: left;width:43%;margin-right:3%;height:40px;line-height:40px;padding:0;border:1px solid #008842;
                             font-size:16px;
-                         }
-#two .mui-content-padded button:first-child{color:#008842;}
-#two .mui-content-padded button:last-child{float:right;}
+                         }        
+#listen #two .mui-content-padded #back{background:#fff;color:#008842;;}      
+#listen #two .mui-content-padded button:first-child{color:#008842;}
+#listen #two .mui-content-padded #gogogo{float:right;}
+#listen #delivery-date{width:100%;height:100%;display:none;}
+#listen .modal-dialog{width:100%;height:100%;position:fixed;top:0px;background:rgba(0,0,0,0.5);z-index:99;}
+#listen .modal-dialog .modal-content{width:95%;left:2.5%;background:#fff;z-index:100;position:fixed;top:10px;border-radius:5px;}
+#listen .modal-dialog .modal-content .modal-header{height:51px;line-height:51px;border-bottom:1px solid #CCCCCC;}
+#listen .modal-dialog .modal-content .modal-header #myModalLabel{margin-left:2.5%;}
+#listen .modal-dialog .modal-content .codewrap p:first-child{height:31px;margin-top:15px;}
+#listen.modal-dialog .close{position:absolute;right:0;border:0;font-size:21px;padding-top:12px;}
+#listen .modal-dialog .modal-content #myModalLabel{font-size:14px;}
+#listen .codewrap p{text-align:center;}
+#listen .codewrap p input:first-child{width:120px;height:30px;}
+#listen .codewrap p input:last-child{width:67.72px;height:30px;}
+#listen .layermmain{width:100%;height:100%;position:fixed;top:0;background:rgba(0,0,0,0.5);z-index:99;display:none;}
+#listen .layermmain .section{position:fixed;top:50%;left:50%;margin-top:-51px;margin-left:-130px;width:260px;height:102px;border: 1px solid #ccc;border-radius:5px;background:#fff;}
+#listen .layermmain .section .layermcont{width:100%;height:62px;font-size:14px;border-bottom: 1px solid #ccc;line-height:62px;}
+#listen .layermmain .section .layermbtn{width:100%;height:40px;line-height:40px;font-size:14px;}
+#listen #top{padding-top:38px;}

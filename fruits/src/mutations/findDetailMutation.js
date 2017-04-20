@@ -1,24 +1,21 @@
 import $ from 'jquery'
+import {baseUrl} from '../../libs/baseURL.js'
 export default function(state,value){
-//	var str = JSON.stringify({gid:value})
-//	var obj = {"gid":12}
-//console.log(typeof str)
 	$.ajax({
-		url:'http://localhost/FruitsProject/Fruits/serverPHP/DAL/FindDetail/FindDetail.php',
+		url:baseUrl+'Fruits/serverPHP/DAL/FindDetail/FindDetail.php',
 		type:"get",
 		dataType:'jsonp',
 		success:function(res){
+			console.log(baseUrl)
 			var newArr=[];
 			$.ajax({
-				url:'http://localhost/FruitsProject/Fruits/serverPHP/DAL/Find/Find.php',
+				url:baseUrl+'Fruits/serverPHP/DAL/Find/Find.php',
 				dataType:'jsonp',
 				jsonpCallback:'demo',
 				success:function(res){
-//				console.log(res)
 					var arrimg= JSON.parse(res);
 					for(var k=0;k<arrimg.length;k++){
 						if(arrimg[k].goodsId == value){
-//							console.log(arrimg[k])
 							newArr.unshift(arrimg[k])
 						}
 					}
@@ -31,7 +28,6 @@ export default function(state,value){
 					newArr.push(arr[i])
 				}
 			}
-			console.log(newArr)
 			state.findDetailAjax = newArr
 			return state
 		}

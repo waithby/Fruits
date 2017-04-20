@@ -3,6 +3,7 @@
 .mui-icon-back:before, .mui-icon-left-nav:before {color: white;}
 #find .find_view_cell{
 	padding-right: 15px;
+	padding-left: 15px;
 }
 #find .find_view_cell>a:not(.mui-btn){margin-right: -15px; }
 #find .find_view_cell img{display: block; width: 100%;}
